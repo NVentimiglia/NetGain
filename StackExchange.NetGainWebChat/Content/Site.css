@@ -1,0 +1,69 @@
+﻿/* assets/css/websockettester.css */
+
+/* Basic layout */
+body {
+	text-align: center;
+}
+#description {
+	margin: 10px 0px;
+}
+#content {
+	margin: 0px auto;
+	width: 900px;
+	text-align: left;
+}
+
+
+/* widgets */
+#serveruri {
+	width: 250px;
+}
+#send {
+	float: right;
+}
+#serveruri {
+	margin-right: 10px;
+}
+/*#connected {*/
+	margin-bottom: 10px;
+	font-size: 1.4em;
+}
+#input {
+	margin-right: 20px;
+}
+
+/* Console */
+.text_io {
+	color: #eee;
+	background: #333;
+	border-radius: 15px;
+	overflow-y: scroll;
+	overflow-x: scroll;
+}
+#console {
+	height: 400px;
+	padding: 10px 20px;
+}
+#prompt {
+	height: 360px;
+	padding: 10px;
+	width: 100%;
+	font-family: "Lucida Console", "Andale Mono", monospace;
+	font-size: 0.9em;
+}
+
+pre {
+	color: #eee;
+	background: transparent;
+	font-family: "Lucida Console", "Andale Mono", monospace;
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+}
+
+.msg {
+	margin: 10px 0px;
+}
+.msg i {
+	border-bottom: 1px solid #eee;
+}

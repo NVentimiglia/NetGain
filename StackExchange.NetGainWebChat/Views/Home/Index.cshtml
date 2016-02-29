@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>WebSocket Tester</title>
+    <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="~/content/Site.css" />
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="~/scripts/Console.js"></script>
+    <script src="~/scripts/WebSocketTestHandler.js"></script>
+    <script src="~/scripts/WebSocketClient.js"></script>
+    <script src="~/scripts/websockettester.js"></script>
+</head>
+<body>
+    <div id="content">
+
+        <h1>WebSocket Tester</h1>
+
+        <div id="description">Here you can connect to a WebSocket URI, send data to it, and see the response.</div>
+        <div id="server">
+            <span id="connected"><i class="icon-check-empty"></i></span>
+            <input type="url" id="serveruri" placeholder="ws://example.com:8080" />
+            <button class="btn" id="connect">Connect</button>
+            <button class="btn" id="disconnect" style="display:none">Disconnect</button>
+        </div>
+        <div class="row">
+            <div id="input" class="span5">
+                <textarea class="text_io"
+                          type="text"
+                          id="prompt"
+                          name="prompt"
+                          placeholder="type your message to the WebSocket server here"></textarea>
+                <button class="btn disabled" id="send">Send</button>
+            </div>
+
+            <div id="output" class="span5">
+                <div class="text_io" id="console"></div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
