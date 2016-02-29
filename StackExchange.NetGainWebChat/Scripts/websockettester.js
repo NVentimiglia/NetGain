@@ -21,7 +21,8 @@ $( document ).ready(function() {
 	// assign event handler to the connect button
 	$("#connect").click(function(e) {
 		var server = $("#serveruri").val();
-		
+
+	    Console.appendTrace("Connecting to " + server);
 		// save the current serveruri so we don't have to type it all the time
 		localStorage.setItem(KEY_SERVER_URI, server);
 		window.WebSocketClient = new WebSocketClient(server, window.Handler);
@@ -29,7 +30,7 @@ $( document ).ready(function() {
 	});
 	
 	// assign event handler to the disconnect button
-	$("#disconnect").click(function(e) {
+	$("#disconnect").click(function (e) {
 		window.WebSocketClient.disconnect();
 		e.preventDefault();
 	});
